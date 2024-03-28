@@ -1,0 +1,2 @@
+add_subdirectory(platform)
+add_subdirectory(object_system)

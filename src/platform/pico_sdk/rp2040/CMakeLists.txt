@@ -1,0 +1,2 @@
+target_sources(shizuku_kernel_pico_sdk_support PRIVATE rp2040.cpp)
+target_include_directories(shizuku_kernel_pico_sdk_support PUBLIC include)
