@@ -1,5 +1,4 @@
 #include <shizuku/kernel/config.hpp>
-int sub(int argc, char const *argv[]) {
-  /* code */
-  return 0;
-}
+#include <shizuku/kernel/interface_interceptor.hpp>
+
+int sub(int argc, char const *argv[]) { return 0; }

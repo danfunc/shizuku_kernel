@@ -31,9 +31,8 @@ if(SHIZUKU_CPU_ARCH_VALID)
 else()
   message(FATAL_ERROR "SHIZUKU_CPU_ARCH invalid")
 endif()
-target_include_directories(
-  shizuku_kernel_config
-  INTERFACE
-  interface)
-configure_file(config_template.hpp
-               ${CMAKE_CURRENT_SOURCE_DIR}/interface/shizuku/kernel/config.hpp)
+target_include_directories(shizuku_kernel_config
+                           INTERFACE ${CMAKE_CURRENT_BINARY_DIR}/interface)
+configure_file(config_template.hpp interface/shizuku/kernel/config.hpp)
+target_compile_definitions(shizuku_kernel_config
+                           INTERFACE SHIZUKU_CONFIGURED_BY_CMAKE)
