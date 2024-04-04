@@ -1,2 +1,5 @@
+set(PICO_CXX_ENABLE_EXCEPTIONS on)
+set(PICO_CXX_ENABLE_RTTI on)
+set(PICO_CXX_ENABLE_CXA_ATEXIT on)
 pico_sdk_init()
 pico_add_extra_outputs(shizuku_kernel)

@@ -9,7 +9,7 @@ if(NOT (CMAKE_BUILD_TYPE STREQUAL "Debug"))
 endif()
 
 target_link_libraries(shizuku_kernel_pico_sdk_support
-                      PRIVATE pico_stdlib pico_multicore hardware_exception)
+                      PUBLIC pico_stdlib pico_multicore hardware_exception )
 target_link_libraries(shizuku_kernel_core
                       PUBLIC shizuku_kernel_pico_sdk_support)
 target_link_libraries(
