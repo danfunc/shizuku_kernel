@@ -1,0 +1,16 @@
+[
+    {
+        "name": "pico",
+        "compilers": {
+            "C": "arm-none-eabi-gcc",
+            "CXX": "arm-none-eabi-g++"
+        },
+        "environmentVariables": {
+            "SHIZUKU_CPU_ARCH": "rp2040",
+            "SHIZUKU_PLATFORM": "pico_sdk",
+            "PICO_BOARD": "pico",
+            "SHIZUKU_KERNEL_PRELOAD_TOOLCHAIN": "pico_sdk_import.cmake",
+            "SHIZUKU_KERNEL_AFTERLOAD_TOOLCHAIN": "pico_add_extra_outputs.cmake"
+        }
+    }
+]
