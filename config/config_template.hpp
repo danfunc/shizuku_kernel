@@ -8,11 +8,9 @@
 #include "shizuku/kernel/platform/${SHIZUKU_PLATFORM}.hpp"
 namespace shizuku {
 namespace types {
-using cpu_driver =
-    INTERFACE_INTERCEPTOR<cpu_driver_interface, ${SHIZUKU_CPU_ARCH}>;
+using cpu_driver = ${SHIZUKU_CPU_ARCH};
 using thread_context = cpu_driver::context;
-using memory_manager =
-    INTERFACE_INTERCEPTOR<memory_manager_interface, ${SHIZUKU_MEMORY_MANAGER}>;
+
 } // namespace types
 } // namespace shizuku
 #endif // SHIZUKU_KERNEL_CONFIG

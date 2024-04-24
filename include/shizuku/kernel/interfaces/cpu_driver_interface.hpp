@@ -4,10 +4,10 @@
 namespace shizuku {
 namespace types {
 struct thread;
+
 struct cpu_driver_interface {
 public:
   virtual int init() = 0;
-  virtual int get_core_num() = 0;
 };
 } // namespace types
 } // namespace shizuku
