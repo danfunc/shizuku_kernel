@@ -11,3 +11,4 @@ else()
     "[warning] SHIZUKU_AFTERLOAD_TOOLCHAIN NOT FOUND. It maybe cause cmake configuration error."
   )
 endif()
+

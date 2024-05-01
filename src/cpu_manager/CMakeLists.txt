@@ -1,1 +1,1 @@
-target_sources(shizuku_kernel_core PRIVATE init.cpp schedule.cpp)
+target_sources(shizuku_kernel_core PRIVATE constructor.cpp schedule.cpp)
